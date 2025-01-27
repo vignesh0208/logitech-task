@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Logitech Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This repository contains the implementation of the Logitech task. It is a
+web-based application developed to meet specific analytical or functional
+requirements. The project leverages modern web technologies to ensure a seamless
+user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Interactive and responsive user interface
+- Data visualization with charts and graphs
+- State management using Redux
+- Modular and reusable components
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Frontend library for building user interfaces
+- **Redux**: State management
+- **Typescript**: A strongly typed programming language
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vignesh0208/logitech-task.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd logitech-task
+   ```
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Usage
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+2. Open your browser and go to:
+   ```
+   http://localhost:5173
+   ```
+
+## Scripts
+
+The following scripts are available in the project:
+
+- `npm run dev` - Starts the development server
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For inquiries or feedback, feel free to contact:
+
+- **Name**: Vignesh
+- **GitHub**: [vignesh0208](https://github.com/vignesh0208)
+
+---
+
+_Happy Coding!_ 🚀
