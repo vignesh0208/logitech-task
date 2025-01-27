@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-const MAX_ENTRIES = '50';
+const MAX_ENTRIES = 20;
 export interface ArrayListItem {
   channelId: number;
   count: number;

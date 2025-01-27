@@ -1,5 +1,4 @@
-import React, { useCallback } from 'react';
-import { debounce } from '../utils/debounce';
+import React from 'react';
 import { Button } from './ui/button';
 
 interface ControlPanelProps {
@@ -15,23 +14,12 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
   onIncreasePrecision,
   onDecreasePrecision,
 }) => {
-  const debouncedZoomIn = useCallback(debounce(onZoomIn, 300), [onZoomIn]);
-  const debouncedZoomOut = useCallback(debounce(onZoomOut, 300), [onZoomOut]);
-  const debouncedIncreasePrecision = useCallback(
-    debounce(onIncreasePrecision, 300),
-    [onIncreasePrecision],
-  );
-  const debouncedDecreasePrecision = useCallback(
-    debounce(onDecreasePrecision, 300),
-    [onDecreasePrecision],
-  );
-
   return (
     <div className='controls'>
-      <Button onClick={debouncedIncreasePrecision}>Increase Precision</Button>
-      <Button onClick={debouncedDecreasePrecision}>Decrease Precision</Button>
-      <Button onClick={debouncedZoomIn}>Zoom In Bars</Button>
-      <Button onClick={debouncedZoomOut}>Zoom Out Bars</Button>
+      <Button onClick={onIncreasePrecision}>Increase Precision</Button>
+      <Button onClick={onDecreasePrecision}>Decrease Precision</Button>
+      <Button onClick={onZoomIn}>Zoom In Bars</Button>
+      <Button onClick={onZoomOut}>Zoom Out Bars</Button>
     </div>
   );
 };

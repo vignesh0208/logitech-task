@@ -24,7 +24,7 @@ const Row: React.FC<RowProps> = ({
     <span className='count'>{data.count}</span>
     <span className='amount'>{formatValue(Math.abs(data.amount))}</span>
     <span className='total'>{formatValue(data.total)}</span>
-    <span className='price'>{formatValue(data.price)}</span>
+    <span className='price'>{data.price}</span>
     <div
       className={`bar ${barClass}`}
       style={{
